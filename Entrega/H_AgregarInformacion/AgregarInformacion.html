@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Informacion</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="AgregarInformacion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagenes/Veterinaria_Logo.png" alt="LogoVeterinaria" id= "logo" style="width:100px;height:100px;"> 
+            <h1>Veterinaria<br>Moka</br></h1>
+        </div>
+        <nav>
+            <a href="/Main/Main.html"style="color: white;">Inicio</a>   
+            <a href="/D_Nosotros/Nosotros.html" style="color: white;">Nosotros</a>
+            <a href="/C_Contactanos/Contactanos.html" style="color: white;">Contáctanos</a>
+            <a href="/C_CerrarSesion/CSesion.html" style="color: white;">Cerrar Sesión</a>
+        </nav>
+    </header>   
+    <section id="principal"><H3>Rulf</H3>
+        <div id="icono">
+            <div id="imagen"></div>
+            <p>Agregar Informacion</p>
+        </div>
+        <div id="Perfil">
+            <div id="foto"></div>
+        </div>
+        <div id="Ultimacita">
+            <div>
+                <p id="Datos">Cita Anterior</p>
+            </div>
+            <p>Diagnostico</p>
+            <input class="control" type="text" name="Diagnostico" id="Diagnosticoanterior">
+            <p>Tratamiento</p>
+            <input class="control" type="text" name="Tratamiento" id="Tratamientoanterior">
+            <p>Recomendaciones</p>
+            <input class="control" type="text" name="Recomendaciones" id="Recomendacionesanterior">
+        </div>
+        <form id="ActualCita">
+            <div>
+                <p id="Datos">Cita Actual</p>
+            </div>
+            <p>Diagnostico</p>
+            <label for="diagnosticoactual"></label>
+            <input class="control" type="text" name="Diagnostico" id="diagnosticoactual">
+            <p>Tratamiento</p>
+            <label for="Tratamientoactual"></label>
+            <input class="control" type="text" name="Tratamiento" id="Tratamientoactual">
+            <p>Recomendaciones</p>
+            <label for="Recomendacionesactual"></label>
+            <input class="control" type="text" name="Recomendaciones" id="Recomendacionesactual">
+            <input class="boton" type="submit" value="Actualizar">
+        </form>
+        <div id="error"></div>
+        <form id="Segui">
+            <div>
+                <p id="Datos">Seguimiento</p>
+            </div>
+            <p>Seguimiento</p>
+            <label for="Seguimiento"></label>
+            <input class="control" type="text" name="Seguimiento" id="Seguimiento">
+            <input class="boton" type="submit" value="Guardar">
+        </form>
+        <div id="error2"></div>
+        <script src="AgregarInformacion.js"></script>
+    </section>
+    
+</body>
+</html>

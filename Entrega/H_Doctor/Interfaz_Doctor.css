@@ -1,0 +1,179 @@
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+}
+
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*Franja horizontal donde esta el Inicio de sesion*/
+#cont{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Contenedor de el que desear hacer como tal*/
+#contenedor {
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+/*Espacio en el que esta suspendido el boton*/
+.contenedorboton{
+    height: 150px;
+    width: 220px;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+/*Formato del boton como tal*/
+#btnListarEXP{
+    width: 160px;
+    height: 200px;
+    font-size: 29px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+
+
+}
+/*icono de agregarmascota*/
+#ListarEXP{
+    align-items: center;
+    justify-content: center;
+} 
+
+/*Formato del boton como tal*/
+#btnAgregar{
+    width: 160px;
+    height: 200px;
+    font-size: 29px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+}
+
+/*icono de hotel*/
+#Agregar{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 25px;
+
+}
+
+/*Formato del boton como tal*/
+#btnListarCitas{
+    width: 160px;
+    height: 200px;
+    font-size: 29px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+
+}
+/*icono de agregarmascota*/
+#Listarcitas{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+} 
+/*Formato del boton como tal*/
+#btnValorarCita{
+    width: 160px;
+    height: 200px;
+    font-size: 29px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+
+}
+
+/*icono de hotel*/
+#ValorarCita{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button:hover{
+    transform: scale(1.2);
+  }
+
+  a:hover{
+    transform: scale(1.2);
+    font-weight: 100px;
+  }

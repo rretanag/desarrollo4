@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Mascota</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="AgregarMascotas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagenes/Veterinaria_Logo.png" alt="LogoVeterinaria" id= "logo" style="width:100px;height:100px;"> 
+            <h1>Veterinaria<br>Moka</br></h1>
+        </div>
+        <nav>
+            <a href="/Main/Main.html"style="color: white;">Inicio</a>   
+            <a href="/D_Nosotros/Nosotros.html" style="color: white;">Nosotros</a>
+            <a href="/C_Contactanos/Contactanos.html" style="color: white;">Contáctanos</a>
+            <a href="/C_CerrarSesion/CSesion.html" style="color: white;">Cerrar Sesión</a>
+        </nav>
+    </header>      
+    <section id="principal">
+        <div id="icono">
+            <div id="imagen"></div>
+            <a href="/Mascotas agregados/Mascotas_Agregadas.html"> Mascotas Agregadas</a>
+        </div>
+        <form id="registro">
+            <div>
+                <p id="Datos">Datos de la Mascota</p>
+            </div>
+            <p>Nombre</p>
+            <label for="nombre"></label>
+            <input class="control" type="text" name="Nombre de la mascota" id="nombre" placeholder="Ingrese el nombre de su mascota">
+            <p>Edad</p>
+            <label for="Edad"></label>
+            <input class="control" type="text" name="Edad de la mascota" id="Edad" placeholder="Ingrese la Edad de su mascota">
+            <p>Especie</p>
+            <label for="Especie"></label>
+            <input class="control" type="text" name="Especie de la mascota" id="Especie" placeholder="Ingrese la especie de su mascota">
+            <p>Raza</p>
+            <label for="Raza"></label>
+            <input class="control" type="text" name="Raza de la mascota" id="Raza" placeholder="Ingrese la raza de su mascota">
+            <input class="boton" type="submit" value="Registrar">
+        </form>
+        <div id="error"></div>
+    </section>
+    <script src="AgregarMascota.js"></script>
+</body>
+</html>

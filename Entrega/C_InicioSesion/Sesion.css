@@ -1,0 +1,204 @@
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+}
+
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo Iniciar sesion*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Este es la etiqueta de Usuario y contra*/
+.contenedor-input label{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: none;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+/*Esta es la cajita gris*/
+.contenedor-input input{
+    width: 90%;
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border-bottom: 2px solid turquoise;
+    padding: 15px;
+    margin-left: 10px;
+
+}
+
+/*Franja horizontal donde esta el Inicio de sesion*/
+#cont{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Contenedor de el Inicio de sesion como tal*/
+#contenedor {
+    width: 300px;
+    height: 500px;
+    padding-right: 20px;
+    /*padding-top: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+/*Espacio en el que esta suspendido el boton*/
+.contenedorboton{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Formato del boton como tal*/
+#btnEnviar{
+    width: 150px;
+    height: 46px;
+    font-size: 20px;
+    background-color: #F18F01;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+}
+
+
+#btnEnviar:hover{
+    background: #F18F01;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contenedorboton:hover{
+    transform: scale(1.2);
+  }
+
+  .swal2-popup {
+    font-size: 1.1rem !important;
+    font-family: 'Antic Slab';
+  }
+
+  
+  /*parte responsive*/
+  #menu-mobile{
+    font-size: 22px;
+    margin-right: 25px;
+    display: none;
+}
+
+a:hover{
+    transform: scale(1.4);
+    font-weight: 100px;
+  }
+
+@media screen and (max-width: 575px){
+    #login, nav{
+        display: none;
+
+    }
+
+    #menu-mobile{
+        display: inline;
+        cursor: pointer;
+
+    }
+    header h1{
+        font-size: 18px;
+
+    }
+
+    #mobile ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        font-family: 'Antic Slab';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    #mobile ul li:hover{
+        transform: scale(1.3);
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+#mobile{
+    width: 100%;
+    height: 100px;
+    background-color: #F18F01;
+}
+
+#mobile ul{
+    float: right;
+    margin-top: 10px;
+    padding-right: 25px;
+}
+
+#mobile li{
+    margin-bottom: 10px;
+
+}
+
+.hidden{
+    display: none;
+}
+
+

@@ -1,0 +1,317 @@
+
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+
+}
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;   
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Contenedor de el que desear hacer como tal*/
+#contenedor {
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    border: 3px solid white; /*PREGUNTAR AL PROFE*/
+}
+
+/*Espacio en el que esta suspendido el boton*/
+.contenedorboton{
+    display: inline;
+    flex-direction: row;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+
+
+/*Formato del boton como tal*/
+#btnAgendar{
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    
+    
+}
+
+
+/*Formato del boton como tal*/
+#btnReprogramar{
+    width: 200px;
+    height: 150px;
+    font-size: 30px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+
+#btnCancelar{
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: #FFFBFB;
+    font-family: 'Antic Slab';
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -3px 13px 15px 3px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+.lateral{
+    width: 278px;
+    height: 100%;
+    opacity: 1;
+    background:#99C24D ;
+    /*PREGUNTAR AL PROFE
+    position: relative;*/
+    float: left;
+}
+
+
+.sidebar img{
+    display: block;
+    margin: 40px auto;
+}
+.Parent {
+    float: left;
+    clear: none; 
+    display: flex;
+}
+
+.sidebar ul li{
+    list-style: none;
+    padding: 12px 10px;
+
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Antic Slab';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.sidebar ul li:hover{
+    background: #4e4e4e;
+    cursor: pointer;
+}
+
+
+#puppy{
+    margin-top: 80px;
+ 
+
+    /*PREGUNTAR AL PROFE
+    justify-content: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;*/
+}
+
+.button:hover{
+    /*text-decoration: underline;
+    text-decoration-color: rgb(250, 114, 64);
+    -moz-text-decoration-color: rgb(250, 114, 64);
+    text-decoration-thickness: 5px;*/
+    transform: scale(1.4);
+}
+
+.Usuarios{
+    margin: 0 auto;
+    margin-top: 100px;
+} 
+
+:root{
+    --color-bg-calendar: #1b1e22;
+    --color-cell: #e3e3e3;
+    --color-cell-disabled: #424649;
+}
+
+.root {
+    min-height: 100px;
+    padding: 0 15px;
+    display: flex
+    justify-content: center;
+    aling-items: center;
+    display: inline-block;
+}
+
+.calendar{
+    padding: 20px 30px;
+    background-color: var(--color-bg-calendar);
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+    font-family: sans-serif;
+}
+
+.calendar__header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.calendar .control{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+
+}
+
+.grid__header, .grid__body{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.grid__header{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.grid__body{
+    grid-auto-rows: 40px;
+    color: var(--color-cell);
+
+}
+
+.grid__cell {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.grid__cell--gd{
+    cursor: pointer;
+}
+
+.grid__cell--selected{
+    color: var(--color-bg-calendar);
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--color-bg-calendar) inset;
+}
+
+.grid__cell--disabled{
+    color: var(--color-cell-disabled);
+    cursor: not-allowed
+}
+
+.selectbox{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.sectioninf{
+    display: flex;
+}
+.selectiondate{
+    padding: 20px;
+    display: flex;
+    margin-right: 20px;
+    background-color: #fef4e6;
+    border-radius: 15px;
+}
+.list{
+    padding: 10px;
+}
+.habOcu{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.Habinfo{
+    padding: 20px;
+    border: 1px solid black;
+}
+.listelement {
+    border: 1px solid black;
+    display: flex;
+    padding: 30px;
+    padding-left: 70px;
+    cursor: pointer;
+    background-color: #eeeee4;
+  }

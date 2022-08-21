@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Citas</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="ListarCitas.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagenes/Veterinaria_Logo.png" alt="LogoVeterinaria" id= "logo" style="width:100px;height:100px;"> 
+            <h1>Veterinaria<br>Moka</br></h1>
+        </div>
+        <nav>
+            <a href="/Main/Main.html"style="color: white;">Inicio</a>   
+            <a href="/D_Nosotros/Nosotros.html" style="color: white;">Nosotros</a>
+            <a href="/C_Contactanos/Contactanos.html" style="color: white;">Contáctanos</a>
+            <a href="/C_CerrarSesion/CSesion.html" style="color: white;">Cerrar Sesión</a>
+        </nav>
+    </header> 
+    <h1 class="Titulo">Chequear Citas</h1>
+    <section>
+        <div class="calendario">
+            <div class="calendario_Info">
+                <div class="calendarioprevio" id="mes_previo">&#9664;</div>
+                <div class="calendariomes" id="mes"></div>
+                <div class="calendarioano" id="ano"></div>
+                <div class="calendariosiguiente" id="mes_siguiente">&#9654;</div>
+            </div>
+            <div class="calendario_semana">
+                <div class="dia" >Lun</div>
+                <div class="dia" >Mar</div>
+                <div class="dia" >Mier</div>
+                <div class="dia" >Jue</div>
+                <div class="dia" >Vier</div>
+                <div class="dia" >Sab</div>
+                <div class="dia" >Dom</div>
+            </div>
+    
+            <div class="calendario_fecha" id="fecha"></div>
+        </div>
+
+        <div id="horas1">
+            <p>Desde</p>
+            <input type="time" name="horamenos" id="max">
+       </div>
+       <div id="horas2">
+            <p>Hasta</p>
+            <input type="time" name="horamax" id="menos">
+        </div>
+
+        <div id="cajon">
+            <h2>Citas</h2>
+            <div id="filas">
+                <p>12:30</p>
+                <input class="control" type="text">
+            </div>
+            <div id="filas">
+                <p>12:30</p>
+                <input class="control" type="text">
+            </div>
+            <div id="filas">
+                <p>12:30</p>
+                <input class="control" type="text">
+            </div>
+            <div id="filas">
+                <p>1:00</p>
+                <input class="control" type="text">
+            </div>
+            <div id="filas">
+                <p>1:30</p>
+                <input class="control" type="text">
+            </div>
+            <div id="filas">
+                <p>2:00</p>
+                <input class="control" type="text">
+            </div>
+            <div id="filas">
+                <p>2:30</p>
+                <input class="control" type="text">
+            </div>
+            <div id="filas">
+                <p>3:00</p>
+                <input class="control" type="text">
+            </div>
+        </div>
+    </section>
+
+<script src="prueba.js"></script>
+</body>
+</html>

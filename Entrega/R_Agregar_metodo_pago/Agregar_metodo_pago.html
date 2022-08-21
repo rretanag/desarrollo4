@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaria Pagina Principal Cita</title>
+    <link rel="stylesheet" href="/reset.css"></link>
+    <link rel="stylesheet" href="Agregar_metodo_pago.css"></link>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'> 
+    <script src="script2.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
+ 
+<!--ul>li*5>a[href=#]{Elemento $}-->
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagenes/Veterinaria_Logo.png" alt="LogoVeterinaria" id= "logo" style="width:100px;height:100px;"> 
+            <h1>Veterinaria<br>Moka</br></h1>
+        </div>
+        <nav>   
+            <a href="/D_Nosotros/Nosotros.html"style="color: white;">Nosotros</a>
+            <a href="/C_Contactanos/Contactanos.html"style="color: white;">Contáctanos</a>
+            <a href="/C_CerrarSesion/CSesion.html"style="color: white;">Cerrar Sesión</a>
+        </nav>
+    </header>
+<div class="parent">   
+    <div class="lateral">
+        <div class="sidebar">         
+            <ul>
+                <img src="https://img.icons8.com/wired/64/000000/medical-doctor.png"width="75"alt= "citasicon">
+                <li><a href = "#">Metodos de Pago</a></li>
+                <img src="https://img.icons8.com/wired/64/000000/undo.png"width="75"alt= "gobackicon">
+                <li><a href = "/Main/Main.html">Volver a página <br>Principal</a></li>        
+            </ul>
+            <img src="/imagenes/citaspuppy.jpg" width="200" alt="citaspuppy" id="puppy">   
+        </div>
+    </div> 
+        
+
+</div>
+
+<!-- contenedor1 START -->
+<!-- FORM START -->
+<form action = "" id="contenedor1">
+    <label id="label0" for="nombrex">Agregar Metodo de Pago</label>
+
+    <label id="label1" for="nombrex">Nombre en la tarjeta</label>
+    <input id="entry_nombre_tarjeta" type="text" name="entry_text_nombre_tarjeta" placeholder="Su nombre en la tarjeta.." required>
+    <label id="label2" for="nombrex">Numero de la tarjeta</label>
+    <input id="entry_numero_tarjeta" type="text" name="entry_text_numero_tarjeta" placeholder="Su numero de tarjeta.." required>
+    <label id="label3" for="nombrex">fecha de expiracion</label>
+    <input id="fecha_expiracion" type="text" name="entry_text_fecha_expiracion" placeholder="12-2022 .." required>
+    <label id="label4" for="nombrex">CVV</label>
+    <input id="cvv" type="text" id="cvv" name="entry_text_cvv" placeholder="cvv.." required>
+
+
+</form>
+<!-- FORM END -->
+<!-- contenedor1 END -->
+
+
+    
+<!-- contenedor4 START -->
+<div id="contenedor4">
+<button type="button" id="btnGuardar" onclick = "enviar_informacion2()" class="button"><img src="https://img.icons8.com/wired/80/000000/save.png"/ alt="salvaricon" style="width:60px;height:60px;">Salvar</button>
+<button type="button" id="btnCancelar" class="button"><img src="https://img.icons8.com/wired/128/000000/cancel--v1.png"/ alt="cancelicon" style="width:60px;height:60px;">Cancelar</button>
+</div>
+<!-- contenedor4 END -->
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+
+}
+
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;   
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a:hover{
+    transform: scale(1.4); 
+}
+
+section {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+#registro{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 38%;
+    width: 400px;
+    height: 600px;
+    background-color: #048BA8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#registro>p{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 14px;
+}
+
+#letras{
+    width: 320px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: #F18F01;
+    margin-left: 11%;
+    text-align: center;
+    text-justify: distribute;
+}
+#Datos{
+    color: white;
+    font-size: 30px;
+}
+
+#M1{
+    width: 250px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+#M2{
+    width: 97px;
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+}
+#Kisha{
+    width: 97px;
+    height: 97px;
+    border-radius: 60px;
+    background-image: url(/imagenes/kisha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#Rulf{
+    width: 97px;
+    height: 97px;
+    border-radius: 60px;
+    background-image: url(/imagenes/Ellipse\ 3.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#Gary{
+    width: 97px;
+    height: 97px;
+    border-radius: 60px;
+    background-image: url(/imagenes/gary.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#Mino{
+    width: 97px;
+    height: 97px;
+    border-radius: 60px;
+    background-image: url(/imagenes/mino.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#M2>a{
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#M2>a:hover{
+    transform: scale(1.5);
+    color: #F18F01;
+}
+
+#M2>p{
+    font-size: 15px;
+    margin-left: 15px;
+    color: white;
+
+}

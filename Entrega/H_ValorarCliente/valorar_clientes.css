@@ -1,0 +1,276 @@
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+
+}
+
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;   
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a:hover{
+    transform: scale(1.4); 
+}
+
+section{
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+H3{
+    font-size: 40px;
+    position: absolute;
+    float: right;
+    margin-top: 100px;
+    margin-left: 32%;
+    color: #F18F01
+}
+
+#icono{
+    width: 150px;
+    height: 125px;
+    position:absolute;
+    float: left;
+    margin-top: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#imagen{
+    background-image: url(https://img.icons8.com/wired/64/000000/add-to-favorites.png);
+    height: 65px;
+    width: 65px;
+}
+
+#icono>p{
+    font-size: 30px;
+    text-align: center;
+}
+
+#Perfil{
+    width: 150px;
+    height: 140px;
+    background-image: url(/imagenes/Ellipse\ 3.png);
+    position:absolute;
+    border-radius: 70px;
+    float: right;
+    margin-left: 20%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#Segui{
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 20%;
+    width: 350px;
+    height: 300px;
+    background-color: #048BA8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.control{
+    margin-left: 30px;
+    width: 285px;
+    height: 150px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px black;
+}
+
+#Segui>p{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 14px;
+    color: #F18F01;
+}
+
+.boton{
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+#Datos{
+    width: 350px;
+    margin-top: 20px;
+    font-size: 35px;
+    color: #F18F01;
+    text-align: center;
+}
+
+#valoracion{
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50px;
+    border: 1px red solid;
+    background-color: #F18F01;
+    border-radius: 30px;
+    
+}
+
+#valor{
+    width: 450px;
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#valoracion>p{
+    width: 340px;
+    margin-left: 75px;
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 30px;
+    color: #3F3F3F;
+}
+
+#valor>p{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border: #F18F01 1px solid;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #3F3F3F;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+#estrella {
+	display: inline-block;
+	position: relative;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 70px;
+	height: 30px;
+	background: #555;
+	border-radius: 15px;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.6), 0px 1px 0px rgba(255,255,255,0.3);   
+}
+
+#estrella> label {
+
+    /* aspecto */
+    display: block;
+    width: 34px;
+	height: 20px;
+	border-radius: 17px;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.35);
+	background: #fcfff4;
+	background: linear-gradient(to top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    cursor: pointer;
+    
+    /* Posicionamiento */
+    position: absolute;
+    top: 5px;
+	left: 5px;
+    z-index: 1;
+    
+	/* Comportamiento */
+    transition: all .4s ease;
+    
+    /* ocultar el posible texto que tenga */
+    overflow: hidden;
+    text-indent: 35px;  
+    transition: text-indent 0s;
+}
+
+#estrella input[type=checkbox]:checked + label {
+	left: auto;
+    right: 5px;
+}
+
+#estrella:after {
+	content: 'NO';
+	font: 12px/30px Arial, sans-serif;
+	color: #AAA;
+	position: absolute;
+	right: 10px;
+    z-index: 0;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255,255,255,.20);
+}
+
+#estrella:before {
+	content: 'SÍ';
+	font: 12px/30px Arial, sans-serif;
+	color: lime;
+	position: absolute;
+	left: 10px;
+	z-index: 0;
+	font-weight: bold;
+}
+
+#guardar{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 40%;
+    border-radius: 10px;
+    border: 1px black solid;
+}

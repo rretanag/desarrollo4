@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Habitaciones</title>
+    <link rel="stylesheet" href="/reset.css"></link>
+    <link rel="stylesheet" href="ControlHabs.css"></link>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagenes/Veterinaria_Logo.png" alt="LogoVeterinaria" id= "logo" style="width:100px;height:100px;"> 
+            <h1>Veterinaria<br>Moka</br></h1>
+        </div>
+        <nav id= "headnav">
+            <a href="/Main/Main.html"style="color: white;">Inicio</a>   
+            <a href="/D_Nosotros/Nosotros.html" style="color:white;">Nosotros</a>
+            <a href="/C_Contactanos/Contactanos.html" style="color:white;">Contáctanos</a>
+            <a href="/C_CerrarSesion/CSesion.html" style="color:white;">Cerrar Sesion</a>
+        </nav>
+    </header>
+<div class="parent">   
+    <div class="lateral">
+        <div class="sidebar">         
+            <ul>
+                <img src="https://img.icons8.com/wired/64/000000/hotel-information.png "width="75"alt= "citasicon">
+                <li><a href = "/D_Menu/D_Menu.html">Control de Habitaciones</a></li>
+                <img src="https://img.icons8.com/wired/64/000000/undo.png" width="75"alt= "gobackicon">
+                <li><a href = "/Main/Main.html">Volver a página <br>Principal</a></li>        
+            </ul>
+            <img src="/imagenes/hotelpuppy.png" width="200" alt="hotelpuppy" id="puppy">   
+        </div>
+    </div>
+</div>
+
+<div class="root">
+    <div class="calendar" id="calendar">
+
+    </div>
+</div>
+<div class="selectbox">
+    <p class="selectiondate">Fecha de inicio</p>
+    <input type="date" id="">
+    <p class="selectiondate">Fecha de Final</p>
+    <input type="date" id="">
+</div>
+<div class="sectioninf">
+    <div class="section2">
+        <table class= "Usuarios">
+            <tr>
+              <td>
+                 <table width="100%" height="100%">
+                    <caption style="background-color:#048BA8;color:white "> Habitaciones Ocupadas</caption>
+                   <tr style="color:white;background-color:#99C24D">
+                      <th>Habitacion</th>
+                   </tr>
+                 </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                 <div class="listcom"style="width:400px; height:200px; overflow:auto;">
+                   <table cellspacing="5" cellpadding="10" width="100%"  >
+                     <tr class="listelement">
+                       <td>Habitacion 8A</td>
+                     </tr>
+                     <tr class="listelement">
+                        <td>Habitacion 10A</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15A</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                      <tr class="listelement">
+                        <td>Habitacion 15C</td>
+                      </tr>
+                   </table>  
+                 </div>
+              </td>
+            </tr>
+        </table>
+    </div>
+    <div class="Habinfo">
+        <p> Moises Barrantes</p>
+        <p>Cedula: 1-111-1111</p>
+        <p>Check in: Junio 12, 2022.</p>
+        <p>Check Out: Junio 15, 2022</p>
+        <p>Cantidad de Mascotas: 2</p>
+        <p>Habitacion: 25B</p>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<sript type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></sript>
+<script type="text/javascript" src="./calendar.js"></script>
+</body>
+</html>

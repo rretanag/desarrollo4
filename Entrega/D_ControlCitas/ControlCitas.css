@@ -1,0 +1,289 @@
+body {
+  font-family: "Antic Slab";
+  height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+  background-color: #048ba8;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  /*centrar los elementos a lo largo del contenedor*/
+  justify-content: space-between;
+  /*centrar los elementos a lo alto*/
+  align-items: center;
+}
+/*Esta es la imagen del logo*/
+#logo {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+  font-size: 17px;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Contenedor de el que desear hacer como tal*/
+#contenedor {
+  width: 700px;
+  height: 600px;
+  margin: auto;
+  border: 3px solid white; /*PREGUNTAR AL PROFE*/
+}
+
+/*Espacio en el que esta suspendido el boton*/
+.contenedorboton {
+  display: inline;
+  flex-direction: row;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/*Formato del boton como tal*/
+#btnAgendar {
+  width: 150px;
+  height: 150px;
+  font-size: 30px;
+  background-color: #fffbfb;
+  font-family: "Antic Slab";
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+/*Formato del boton como tal*/
+#btnReprogramar {
+  width: 200px;
+  height: 150px;
+  font-size: 30px;
+  background-color: #fffbfb;
+  font-family: "Antic Slab";
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+#btnCancelar {
+  width: 150px;
+  height: 150px;
+  font-size: 30px;
+  background-color: #fffbfb;
+  font-family: "Antic Slab";
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+.lateral {
+  width: 278px;
+  height: 100%;
+  opacity: 1;
+  background: #99c24d;
+  /*PREGUNTAR AL PROFE
+    position: relative;*/
+  float: left;
+}
+
+.sidebar img {
+  display: block;
+  margin: 40px auto;
+}
+.Parent {
+  float: left;
+  clear: none;
+  display: flex;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 12px 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-family: "Antic Slab";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.sidebar ul li:hover {
+  background: #4e4e4e;
+  cursor: pointer;
+}
+
+#puppy {
+  margin-top: 80px;
+}
+
+.button:hover {
+  transform: scale(1.4);
+}
+
+a:hover {
+  transform: scale(1.4);
+}
+
+
+.Usuarios {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.sectioninf {
+  display: flex;
+}
+.selectiondate {
+  padding: 20px;
+  display: flex;
+  max-width: 200px;
+  margin-right: 20px;
+  background-color: #fef4e6;
+  border-radius: 15px;
+}
+.list {
+  padding: 10px;
+}
+.habOcu {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.Habinfo {
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 200px;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+.listelement {
+  border: 1px solid black;
+  display: flex;
+  padding: 30px;
+  padding-left: 70px;
+  cursor: pointer;
+  background-color: #eeeee4;
+}
+
+#contenedor {
+  width: 700px;
+  height: 600px;
+  margin: auto;
+  border: 3px solid white; /*PREGUNTAR AL PROFE*/
+}
+
+/*Espacio en el que esta suspendido el boton*/
+.contenedorboton {
+  display: inline;
+  flex-direction: row;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/*Formato del boton como tal*/
+#btnAgendar {
+  width: 80px;
+  height: 80px;
+  font-size: 15px;
+  background-color: #fffbfb;
+  font-family: "Antic Slab";
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+/*Formato del boton como tal*/
+#btnReprogramar {
+  width: 100px;
+  height: 80px;
+  font-size: 15px;
+  background-color: #fffbfb;
+  font-family: "Antic Slab";
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+#btnCancelar {
+  width: 80px;
+  height: 80px;
+  font-size: 15px;
+  background-color: #fffbfb;
+  font-family: "Antic Slab";
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 13px 15px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+#btnCancelar:hover{
+  background:  #F18F01;
+  cursor: pointer;
+}
+#btnReprogramar:hover{
+  background:  #F18F01;
+  cursor: pointer;
+}
+#btnAgendar:hover{
+  background:  #F18F01;
+  cursor: pointer;
+}

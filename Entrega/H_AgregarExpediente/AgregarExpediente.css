@@ -1,0 +1,144 @@
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+}
+
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+section{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+#icono{
+    width: 135px;
+    height: 135px;
+    position:absolute;
+    float: left;
+    margin-top: 70px;
+    margin-left: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#imagen{
+    background-image: url(/imagenes/icons8-spiral-bound-booklet-64.png);
+    height: 65px;
+    width: 65px;
+}
+
+#icono>a{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+#icono:hover{
+    transform: scale(1.2);
+    background-color: #F18F01;
+}
+
+#registro{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 38%;
+    width: 400px;
+    height: 400px;
+    background-color: #F18F01;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.control{
+    margin-left: 30px;
+    width: 250px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px black;
+}
+
+#registro>p{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 14px;
+}
+
+.boton{
+    margin-top: 50px;
+    margin-left: 30%;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+#Datos{
+    margin-top: 25px;
+    margin-left: 18%;
+    font-size: 30px;
+}
+
+#error{
+    font-size: 20px;
+    float: left;
+    margin-left: 650px;
+    margin-top: 500px;
+    width: 290px;
+}
+
+a:hover{
+    transform: scale(1.4);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="/reset.css"></link>
+    <link rel="stylesheet" href="Sesion.css"></link>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagenes/Veterinaria_Logo.png" alt="LogoVeterinaria" id= "logo" style="width:100px;height:100px;"> 
+            <h1>Veterinaria<br>Moka</br></h1>
+        </div>
+        <nav>   
+            <a href="#" style="color: white;">Inicio</a>
+            <a href="/D_Nosotros/Nosotros.html" style="color: white;">Nosotros</a>
+            <a href="/C_Contactanos/Contactanos.html" style="color: white;">Contáctanos</a>
+        </nav>
+        <div id="menu-mobile">
+            <i class="fa fa-bars" id="icono_menu"></i>
+        </div>
+    </header>
+    <!--menu para la parte mobil-->
+    <div id="mobile" class="hidden">
+        <!--elemento de lista desordenada-->
+        <ul> 
+            <a href="/Main/Main.html"style="color: white;">Inicio</a>
+            <li><a href="/D_Nosotros/Nosotros.html" id="b">Nosotros</a></li>
+            <li><a href="/C_Contactanos/Contactanos.html" id="b">Contactanos</a></li>
+        </ul>          
+    </div>
+    </header>
+    <div id="cont">
+        <div id="contenedor">
+            <h2>Iniciar Sesión</h2>
+            <form action="" id="InicioSesion">
+                <div class= "contenedor-input">
+                    <label for="txtUser">Usuario</label>
+                    <input type="text" id="txtUser" maxlength="100" placeholder="1-1111-1111" required>
+                </div>
+                <div class= "contenedor-input">
+                    <label for="txtPassword">Contraseña</label>
+                    <input type="password" id="txtPassword" placeholder="*******" required>
+                </div>
+                <div class = "contenedorboton">
+                    <button type="button" id="btnEnviar" class="button">Acceder</button>
+                    <a href="/C_Main_Secretaria/MainSecre.html"></a>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="ScriptSesion.js"></script>
+</body>
+</html>

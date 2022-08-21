@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar método de Pago</title>
+    <link rel="stylesheet" href="/reset.css"></link>
+    <link rel="stylesheet" href="/B_EditarPago/EditarPago.css"></link>
+    <script src="scriptEP.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
+ 
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagenes/Veterinaria_Logo.png" alt="LogoVeterinaria" id= "logo" style="width:100px;height:100px; z-index: 2;"> 
+            <h1>Veterinaria<br>Moka</br></h1>
+        </div>
+        <nav>   
+            <a href="/D_Nosotros/Nosotros.html"style="color: white;">Nosotros</a>
+            <a href="/C_Contactanos/Contactanos.html"style="color: white;">Contáctanos</a>
+            <a href="/C_CerrarSesion/CSesion.html"style="color: white;">Cerrar Sesión</a>
+        </nav>
+    </header>
+<div class="parent">   
+    <div class="lateral">
+        <div class="sidebar">         
+            <ul>
+                <img src="https://img.icons8.com/wired/64/000000/undo.png" width="75"alt= "gobackicon">
+                <li><a href = "/Main/Main.html">Volver a página <br>Principal</a></li>        
+            </ul>
+        </div>
+    </div> 
+        <div id="cont">
+            <div id="contenedor">
+                <h2>Editar método de Pago</h2>                
+                <form action="" method="">
+                    <div class= "contenedor-input">
+                        <label for="txtUsuario">Nombre en la tarjeta:</label>
+                        <input type="text" id="entry_nombre_tarjeta" name="entry_text_nombre_tarjeta" maxlength="100" placeholder="John" required>
+                    </div>
+                    <div class= "contenedor-input">
+                        <label for="txtUsuario">Número en la tarjeta:</label>
+                        <input type="text" id="entry_numero_tarjeta" name="entry_numero_tarjeta" maxlength="100" placeholder="1234-5678-9101-1121" required>
+                    </div>
+                    <div class= "contenedor-input">
+                        <label for="txtUsuario">Fecha de expiración:</label>
+                        <input type="date" id="fecha_expiracion" name="entry_text_fecha_expiracion" maxlength="100" required>
+                    </div>
+                    <div class= "contenedor-input">
+                        <label for="txtUsuario">CVV:</label>
+                        <input type="text" id="cvv" name="entry_text_cvv" maxlength="100" placeholder="000" required>
+                    </div>
+                    <div class= "contenedorboton">
+                        <button type="button" id="btnEnviar" onclick="enviar_informacion2()" class="button"><img src="https://img.icons8.com/wired/80/000000/save.png"/ alt="guardaricon" style="width:60px;height:60px;"><br>Guardar cambios</button>
+                    </div>
+            </div>
+    </div>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+body {
+    font-family: 'Antic Slab';
+    height: 100%;
+}
+
+/*Este es solo el banner turquesa*/
+header {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+
+}
+
+/*Este es solo el banner turquesa*/
+footer {
+    background-color: #048BA8;
+    width: 100%;
+    height: 90px;
+    /*centrar los elementos a lo largo del contenedor*/
+    justify-content: space-between;
+    /*centrar los elementos a lo alto*/
+    align-items: center;
+    top: 1500px;
+
+}
+
+/*ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
+.lateral{
+    width: 278px;
+    height: 800px;
+    opacity: 1;
+    background:#99C24D ;
+    /*PREGUNTAR AL PROFE
+    position: relative;*/
+    float: left;
+    top: 500px;
+    left: 20px;
+}
+
+/*Esta es la imagen del logo*/
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;   
+}
+
+/*Este es el titulo Veterinaria Moka*/
+h1{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+
+/*Este es el titulo que deseas hacer*/
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+/*Este es el Nosotros, contactanos, xxx*/
+nav {
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Contenedor de el que desear hacer como tal*/
+#contenedor {
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    border: 3px solid white; /*PREGUNTAR AL PROFE*/
+}
+
+
+#contenedor2 {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 430px;
+    left: 300px;
+    float: left;
+    /*border: 2px solid rgb(0, 255, 42);*/
+}
+
+
+#contenedor3 {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 500px;
+    left: 300px;
+    float: left;
+    /*border: 2px solid rgb(255, 0, 170);*/
+}
+
+#contenedor4 {
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    top: 575px;
+    left: 300px;
+    float: left;
+    /*border: 2px solid rgb(98, 0, 255);*/
+}
+
+#contenedor5 {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 360px;
+    left: 300px;
+    float: left;
+    /*border: 2px solid rgb(255, 153, 0);*/
+}
+
+#contenedor6 {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 290px;
+    left: 300px;
+    float: left;
+    /*border: 2px solid rgb(255, 0, 170);*/
+}
+
+
+#contenedor666 {
+    position: absolute;
+    width: 100%;
+    height: 420px;;
+    top: 120px;
+    float: left;
+    margin-left: 400px;
+    
+}
+
+#contenedor777 {
+    position: absolute;
+    width: 100%;
+    height: 90px;;
+    top: 800px;
+    float: left;
+    
+    background-color: #048BA8;
+}
+
+#contenedor888 {
+    position: absolute;
+    width: 100%;
+    height: 390px;;
+    top: 500px;
+    float: left;
+    
+    background:#99C24D ;
+}
+
+#contenedor1111 {
+
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 100px;
+    left: 1600px;
+    float: left;   
+}

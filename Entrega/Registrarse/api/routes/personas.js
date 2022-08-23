@@ -92,7 +92,12 @@ router.post("/registrar", (req, res) => {
     let nueva_persona = new Persona({
         nombre: body.nombre,
         apellidos: body.apellidos,
-        email: body.email
+        email: body.email,
+        cedula: body.cedula,
+        fechaNacimiento: body.fechaNacimiento,
+        telefono: body.telefono,
+        contrasena: body.contrasena,
+        etiqueta: body.etiqueta
     });
 
     nueva_persona.save((error, personaDB) => {
@@ -105,7 +110,7 @@ router.post("/registrar", (req, res) => {
         } else {
             res.status(200).json({
                 resultado: true,
-                msj: "Registro exitoso",
+                msj: "Registro exitoso33",
                 personaDB
             });
         }

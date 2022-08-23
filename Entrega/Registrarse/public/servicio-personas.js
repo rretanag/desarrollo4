@@ -1,5 +1,5 @@
-const registrar_persona = async(pcedula, pcorreo, pnombre) => {
-    //alert("ojo3333333333333333333");
+const registrar_persona = async(pcedula, pcorreo, pnombre, pcedulax, pfechaNacimientox, ptelefonox, pcontrasenax, petiquetax) => {
+    alert("ojo3333333333333333333");
     await axios({
         method: "post",
         url: "http://localhost:3000/api/registrar",
@@ -10,11 +10,18 @@ const registrar_persona = async(pcedula, pcorreo, pnombre) => {
             //email: "444444444443333333333333333"
             nombre:pcedula,
             apellidos:pcorreo,
-            email:pnombre
+            email:pnombre,
+            cedula:pcedulax,
+            fechaNacimiento:pfechaNacimientox,
+            telefono:ptelefonox,
+            contrasena:pcontrasenax,
+            etiqueta:petiquetax
+
+
         }
     }).
     then((res) => {
-        //alert("ojo444444444444444");
+        alert("ojo444444444444444");
         if (res.data.resultado == false) {
             switch (res.data.error.code) {
                 case 11000:
@@ -30,7 +37,7 @@ const registrar_persona = async(pcedula, pcorreo, pnombre) => {
         } else {
             Swal.fire({
                 title: "Registro exitoso",
-                text: "Persona guardad en BD",
+                text: "Persona guardad en BDx",
                 icon: "success"
             });
         }
@@ -56,8 +63,8 @@ const listar_personas_BD = async() => {
             console.log(err);
         });
     
-    //alert("ojoFFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
-    //alert(lista_usuarios);
+    alert("ojoFFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
+    alert(lista_usuarios);
     return lista_usuarios;
 }
 

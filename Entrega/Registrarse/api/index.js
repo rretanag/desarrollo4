@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URI, {
             process.exit(1);
         } else {
             let db = database;
-            console.log("Conectados a MONGODB2");
+            console.log("Conectados a MONGODB666");
         }
     }
 )

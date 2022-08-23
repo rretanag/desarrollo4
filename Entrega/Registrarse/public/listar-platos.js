@@ -14,7 +14,13 @@ const mostrar_datos_en_tabla = async() => {
         let celda_nombre = (fila.insertCell().innerHTML = listado_de_usuarios[i]["nombre"]);
         let celda_apellidos = (fila.insertCell().innerHTML = listado_de_usuarios[i]["apellidos"]);
         let celda_email = (fila.insertCell().innerHTML = listado_de_usuarios[i]["email"]);
-
+        let celda_cedula = (fila.insertCell().innerHTML = listado_de_usuarios[i]["cedula"]);
+        let celda_fechaNacimiento = (fila.insertCell().innerHTML = listado_de_usuarios[i]["celda_fechaNacimiento"]);
+        let celda_telefono = (fila.insertCell().innerHTML = listado_de_usuarios[i]["telefono"]);
+        let celda_contrasena = (fila.insertCell().innerHTML = listado_de_usuarios[i]["contrasena"]);
+        let celda_etiqueta = (fila.insertCell().innerHTML = listado_de_usuarios[i]["etiqueta"]);
+    
+        
         //editar
         let celda_btn_editar = fila.insertCell();
         let botonx = document.createElement("button");

@@ -157,7 +157,7 @@ function validarClave() {
 
 function enviar_informacion2() {
     //alert("Boton Presionado1");
-    Swal.fire('Any fool can use a computer');
+    //Swal.fire('Any fool can use a computer');
     let error_campos_vacios = camposVacios();
     let error_cvv = validarCvv();
     let error_cedula = validarCedula();

@@ -379,6 +379,106 @@ nav {
     border: 2px solid rgb(0, 26, 255);
 }
 
+#label5 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 130px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#costo991 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 130px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#label6 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 160px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#costo992 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 160px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#label7 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 190px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#costo993 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 190px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#label8 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 220px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#costo994 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 220px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
+#label9 {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 250px;
+    left: 20px;
+    float: left;
+    /*border: 2px solid rgb(0, 26, 255);*/
+}
+
+#costo995 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 250px;
+    left: 200px;
+    float: left;
+    border: 2px solid rgb(0, 26, 255);
+}
+
 #label44 {
     position: absolute;
     width: 100px;

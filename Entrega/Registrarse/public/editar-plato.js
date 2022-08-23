@@ -2,6 +2,13 @@
 const inputNumTarjeta = document.getElementById("plato99");
 const inputFechaExpiracion = document.getElementById("ingredientes99");
 const inputcvv = document.getElementById("costo99");
+///////////////////////////////////////////////////////////////////////////////////
+const inputcedulax = document.getElementById("costo991");
+const inputfechaNacimientox = document.getElementById("costo992");
+const inputtelefonox = document.getElementById("costo993");
+const inputcontrasenax = document.getElementById("costo994");
+const inputetiquetax = document.getElementById("costo995");
+///////////////////////////////////////////////////////////////////////////////////
 
 let nombre22 = localStorage.getItem("nombre");
 //console.log(nombre22);
@@ -20,6 +27,11 @@ const llenar_campos = async() => {
     inputNumTarjeta.value = persona999[0].nombre;
     inputFechaExpiracion.value = persona999[0].apellidos;
     inputcvv.value = persona999[0].email;
+    inputcedulax.value = persona999[0].cedula;
+    inputfechaNacimientox.value = persona999[0].fechaNacimiento;
+    inputtelefonox.value = persona999[0].telefono;
+    inputcontrasenax.value = persona999[0].contrasena;
+    inputetiquetax.value = persona999[0].etiqueta;
 
 }
 

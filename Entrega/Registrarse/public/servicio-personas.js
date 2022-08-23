@@ -89,7 +89,7 @@ const obtener_persona_nombre = async(nombre) => {
 }
 
 
-const modificar_persona = async(pcedulax, pcorreox, pnombrex, p_idx) => {
+const modificar_persona = async(pcedulax, pcorreox, pnombrex, p_idx, pcedulax1, pfechaNacimientox1, ptelefonox1, pcontrasenax1, petiquetax1) => {
     await axios({
         method: "put",
         url: "http://localhost:3000/api/modificar",
@@ -98,7 +98,12 @@ const modificar_persona = async(pcedulax, pcorreox, pnombrex, p_idx) => {
             nombre: pcedulax,
             apellidos: pcorreox,
             email: pnombrex,
-            _id: p_idx
+            _id: p_idx,
+            cedula: pcedulax1,
+            fechaNacimiento: pfechaNacimientox1,
+            telefono: ptelefonox1,
+            contrasena: pcontrasenax1,
+            etiqueta: petiquetax1
         }
     }).then((res) => {
         Swal.fire({

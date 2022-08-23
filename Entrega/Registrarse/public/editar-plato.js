@@ -58,15 +58,16 @@ function camposVacios() {
 
 //validar cvv
 function validarCvv() {
-    //alert("Boton Presionado2");
+    //alert("Boton Presionado2!!!!!!!!!!!");
     let error = false;
     let campos_requeridos = document.querySelectorAll("#contenedor1 [required]");
     //alert("Boton Presionado3");
     let texto_usuario = inputcvv.value;
     //alert("Boton Presionado4");
     
-    let expresion_tarjeta = /[1-9]/;
-    let expresion_tarjeta2 = /-/;
+    //^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
+    let expresion_tarjeta = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]/;
+    //let expresion_tarjeta2 = /.com/;
     //alert("Boton Presionado5");
         
     
@@ -75,11 +76,6 @@ function validarCvv() {
         inputNumTarjeta.classList.add("error");
         campos_requeridos[2].style.border = 'solid 2px red';
         
-    } else if (expresion_tarjeta2.test(texto_usuario) == true) {
-        error = true;
-        inputNumTarjeta.classList.add("error");
-        campos_requeridos[2].style.border = 'solid 2px red';
-
     } else {
         inputNumTarjeta.classList.remove("error");
         campos_requeridos[2].style.border = 'solid 1px black';
@@ -123,11 +119,20 @@ function enviar_informacion222() {
         let apellidosx = inputFechaExpiracion.value;
         let emailx = inputcvv.value;
 
+        ///////////////////////////////////////////////////////////////////////////////////
+        let cedulax = inputcedulax.value;
+        let fechaNacimientox = inputfechaNacimientox.value;
+        let telefonox = inputtelefonox.value;
+        let contrasenax = inputcontrasenax.value;
+        let etiquetax = inputetiquetax.value;
+        ///////////////////////////////////////////////////////////////////////////////////
+
+
         //let nombrex = "w";
         //let apellidosx = "w";
         //let emailx = "1111";
 
-        modificar_persona(nombrex, apellidosx, emailx, _id);
+        modificar_persona(nombrex, apellidosx, emailx, _id, cedulax, fechaNacimientox, telefonox, contrasenax, etiquetax);
 
         swal.fire({
             incon:"success",

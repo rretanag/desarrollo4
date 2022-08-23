@@ -63,6 +63,96 @@ function validarCvv() {
 
 //&& expresion_tarjeta2 > 0
 
+//validar cedula
+function validarCedula() {
+    //alert("Boton Presionado2!!!!!!!!!!!");
+    let error = false;
+    let campos_requeridos = document.querySelectorAll("#contenedor1 [required]");
+    //alert("Boton Presionado3");
+    let texto_usuario = inputcedulax.value;
+    //alert("Boton Presionado4");
+    
+    //^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
+    let expresion_tarjeta = /[0-9]{1}-[0-9]{4}-[0-9]{4}/;
+    //let expresion_tarjeta2 = /.com/;
+    //alert("Boton Presionado5");
+        
+    
+    if (expresion_tarjeta.test(texto_usuario) == false) {
+        error = true;
+        inputNumTarjeta.classList.add("error");
+        campos_requeridos[3].style.border = 'solid 2px red';
+        
+    } else {
+        inputNumTarjeta.classList.remove("error");
+        campos_requeridos[3].style.border = 'solid 1px black';
+    }
+
+    return error;
+    
+    
+}
+
+
+//validar telefono
+function validarTelefono() {
+    //alert("Boton Presionado2!!!!!!!!!!!");
+    let error = false;
+    let campos_requeridos = document.querySelectorAll("#contenedor1 [required]");
+    //alert("Boton Presionado3");
+    let texto_usuario = txtNumeroTelefono.value;
+    //alert("Boton Presionado4");
+    
+    //^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
+    let expresion_tarjeta = /[0-9]{4}-[0-9]{4}/;
+    //let expresion_tarjeta2 = /.com/;
+    //alert("Boton Presionado5");
+        
+    
+    if (expresion_tarjeta.test(texto_usuario) == false) {
+        error = true;
+        inputNumTarjeta.classList.add("error");
+        campos_requeridos[5].style.border = 'solid 2px red';
+        
+    } else {
+        inputNumTarjeta.classList.remove("error");
+        campos_requeridos[5].style.border = 'solid 1px black';
+    }
+
+    return error;
+    
+    
+}
+
+//validar clave
+function validarClave() {
+    //alert("Boton Presionado2!!!!!!!!!!!");
+    let error = false;
+    let campos_requeridos = document.querySelectorAll("#contenedor1 [required]");
+    //alert("Boton Presionado3");
+    let texto_usuario = inputcontrasenax.value;
+    //alert("Boton Presionado4");
+    
+    //^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
+    let expresion_tarjeta = /[0-9]{4}-[0-9]{4}/;
+    //let expresion_tarjeta2 = /.com/;
+    //alert("Boton Presionado5");
+        
+    
+    if (expresion_tarjeta.test(texto_usuario) == false) {
+        error = true;
+        inputNumTarjeta.classList.add("error");
+        campos_requeridos[6].style.border = 'solid 2px red';
+        
+    } else {
+        inputNumTarjeta.classList.remove("error");
+        campos_requeridos[6].style.border = 'solid 1px black';
+    }
+
+    return error;
+    
+    
+}
 
 
 function enviar_informacion2() {
@@ -70,6 +160,9 @@ function enviar_informacion2() {
     Swal.fire('Any fool can use a computer');
     let error_campos_vacios = camposVacios();
     let error_cvv = validarCvv();
+    let error_cedula = validarCedula();
+    let error_telefono = validarTelefono();
+    let error_clave = validarClave();
 
     if (error_campos_vacios) {
         //alert("ojo1");
@@ -85,6 +178,27 @@ function enviar_informacion2() {
             icon: "warning",
             title: "Email inválido",
             text: "Email inválido"
+        });
+
+    } else if (error_cedula) {
+        Swal.fire({
+            icon: "warning",
+            title: "Cedula inválida",
+            text: "Cedula inválida"
+        });
+
+    } else if (error_telefono) {
+        Swal.fire({
+            icon: "warning",
+            title: "Telefono inválido",
+            text: "Telefono inválido"
+        });
+
+    } else if (error_clave) {
+        Swal.fire({
+            icon: "warning",
+            title: "Clave inválida",
+            text: "Clave inválida"
         });
 
     } else {

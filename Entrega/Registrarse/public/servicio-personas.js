@@ -113,10 +113,10 @@ const modificar_persona = async(pcedulax, pcorreox, pnombrex, p_idx, pcedulax1, 
             
 
         });
-        window.location.href="platillos.html";
+        window.location.href="listar-usuarios.html";
 
     }).then(() => {
-        window.location.href = "platillos.html"
+        window.location.href = "listar-usuarios.html"
     }).catch((err) => {
         console.log(err);
     })
@@ -137,7 +137,7 @@ const eliminar_persona = async(pid) => {
             icon: "success"
         });
     }).then(() => {
-        window.location.href = "inicio.html"
+        window.location.href = "listar-usuarios.html"
     }).catch((err) => {
         console.log(err);
     })

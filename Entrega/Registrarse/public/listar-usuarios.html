@@ -11,6 +11,7 @@
     <script src=".\script2.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
     <script src=".\servicio-personas.js" defer></script>
+    <script src=".\listar-platos.js" defer></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
  
 <!--ul>li*5>a[href=#]{Elemento $}-->
@@ -19,13 +20,12 @@
 <body>
     <header>
         <div id="logo">
-            <h1>Restaurante X<br>Inicio</br></h1>
+            <h1>Listar<br>Usuarios</br></h1>
         </div>
         <nav>   
             <a href=".\inicio.html">Inicio</a>
             <a href=".\Registrarse.html">Registrarse</a>
             <a href=".\listar-usuarios.html">Listar Usuarios</a>
-        </nav>
     </header>
 <div class="parent">   
     <div class="lateral">
@@ -40,23 +40,45 @@
 
 </div>
 
-<!-- contenedor1 START -->
-<!-- FORM START -->
-<form action = "" id="contenedor1">
-    <label id="label0" for="nombrex">Esta es la pagina de inicio</label>
 
-
-</form>
-<!-- FORM END -->
-<!-- contenedor1 END -->
 
 
     
 <!-- contenedor4 START -->
 <div id="contenedor4">
+<button type="button" id="btnGuardar" onclick = "mostrar_datos_en_tabla()" class="button"><img src="https://img.icons8.com/wired/80/000000/save.png"/ alt="salvaricon" style="width:60px;height:60px;">   Listar Usuarios</button>
+
 </div>
 <!-- contenedor4 END -->
 
+<!-- contenedor555 START -->
+<div id="contenedor555">
+    <table id="informacion-registro">
+    </section>
+    <section id="informacion">
+        
+        
+        <table id="informacion-registro">
+            <thead>
+                <tr>
+                    <th id="l1">Nombre</th>
+                    <th id="l2">Apellidos</th>
+                    <th id="l3">Email</th>
+                    <th id="l4">Cedula</th>
+                    <th id="l5">Fecha Nacimiento</th>
+                    <th id="l6">Telefono</th>
+                    <th id="l7">Contrasena</th>
+                    <th id="l8">Tipo</th>
+                    <th id="l9">Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+    
+    
+</div>
+<!-- contenedor555 END -->
 
 
 

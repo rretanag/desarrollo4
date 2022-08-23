@@ -31,7 +31,7 @@ const mostrar_datos_en_tabla = async() => {
             //console.log(listado_de_usuarios[i]_id);
             //localStorage.setItem("id_mongo", listado_de_usuarios[i]_id);
             localStorage.setItem("nombre", listado_de_usuarios[i].nombre);
-            window.location.href="editar-plato.html";
+            window.location.href="editar-usuarios.html";
 
 
         })
